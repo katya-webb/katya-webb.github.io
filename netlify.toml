@@ -1,0 +1,28 @@
+# Netlify config — Katya Portfolio
+# Статический сайт без сборки
+
+[build]
+  publish = "."
+
+# Длинный кэш для картинок
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Короткий кэш для CSS и JS — чтобы правки прилетали быстро
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+# HTML обновляется сразу при правках
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Катя — веб-дизайнер и разработчик</title>
+  <meta name="description" content="Создаю сайты, которые продают. Лендинги, многостраничники, таплинки, чат-боты и презентации." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=11" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">K<span>.</span></a>
+      <nav class="nav__menu">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#guarantees">Гарантии</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn--small nav__cta">Написать</a>
+      <button class="nav__burger" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#about" class="mobile-menu__link"><span class="mobile-menu__num">01</span><span class="serif italic">Обо мне</span></a>
+      <a href="#services" class="mobile-menu__link"><span class="mobile-menu__num">02</span><span class="serif italic">Услуги</span></a>
+      <a href="#guarantees" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span class="serif italic">Гарантии</span></a>
+      <a href="#projects" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span class="serif italic">Проекты</span></a>
+      <a href="#contact" class="mobile-menu__link"><span class="mobile-menu__num">05</span><span class="serif italic">Контакты</span></a>
+    </nav>
+    <a href="#contact" class="btn mobile-menu__cta">Написать →</a>
+  </div>
+
+  <section id="top" class="hero">
+    <div class="side-text" aria-hidden="true">KATYA · DESIGN STUDIO · 2026 · KATYA · DESIGN STUDIO · 2026</div>
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <div class="status-pill">
+          <span class="status-pill__dot"></span>
+          <span>открыта для&nbsp;новых проектов</span>
+        </div>
+        <span class="eyebrow">// web designer &amp; developer</span>
+        <h1 class="hero__title">
+          <span class="serif italic">Сайты</span> <span class="serif">как</span><br/>
+          <span class="serif italic">бизнес<span class="hero__dash">&nbsp;–&nbsp;</span>актив</span>
+        </h1>
+        <div class="hero__lead">
+          <ul class="hero__services">
+            <li><a href="#services">Лендинги</a></li>
+            <li><a href="#services">Многостраничные сайты</a></li>
+            <li><a href="#services">Таплинки</a></li>
+            <li><a href="#services">Чат-боты</a></li>
+            <li><a href="#services">Презентации</a></li>
+          </ul>
+          <p class="hero__tagline">
+            <span class="serif italic">под&nbsp;ключ</span> · <span class="serif italic">со&nbsp;смыслом</span> · <span class="serif italic">в&nbsp;твоём стиле</span>
+          </p>
+        </div>
+        <div class="hero__cta">
+          <a href="#contact" class="btn">Обсудить проект →</a>
+          <a href="#services" class="btn btn--ghost">Что&nbsp;я&nbsp;делаю →</a>
+        </div>
+      </div>
+      <div class="hero__photo polaroid polaroid--left">
+        <span class="photo-dot photo-dot--tl" aria-hidden="true"></span>
+        <span class="photo-dot photo-dot--br" aria-hidden="true"></span>
+        <img src="images/photo-1.jpg" alt="Катя — веб-дизайнер" />
+        <div class="polaroid__caption">
+          <span class="script">это я</span>
+        </div>
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="stampPath" d="M 100,100 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"/>
+            </defs>
+            <text>
+              <textPath href="#stampPath" startOffset="0">
+                ✦ web design ✦ development ✦ strategy ✦ 2026
+              </textPath>
+            </text>
+          </svg>
+          <span class="stamp__core">✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__grid">
+      <div class="about__photo-wrap">
+        <div class="about__photo polaroid polaroid--right">
+          <span class="photo-dot photo-dot--tl photo-dot--cream" aria-hidden="true"></span>
+          <span class="photo-dot photo-dot--br photo-dot--cream" aria-hidden="true"></span>
+          <img src="images/photo-2.jpg" alt="Катя" />
+          <div class="polaroid__caption">
+            <span class="script">Катя</span>
+          </div>
+          <div class="sticker sticker--cream" aria-hidden="true">
+            <span class="script">привет!</span>
+          </div>
+        </div>
+
+        <div class="about__photo--mini polaroid polaroid--left" aria-hidden="true">
+          <img src="images/photo-1.jpg" alt="" />
+          <div class="polaroid__caption">
+            <span class="script">это&nbsp;я</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="eyebrow">// обо мне</span>
+        <h2 class="section-title"><span class="serif italic">About&nbsp;me</span></h2>
+        <p>
+          Привет! Я&nbsp;Катя&nbsp;— веб-дизайнер и&nbsp;разработчик.
+          Делаю сайты, которые не&nbsp;просто красиво выглядят,
+          а&nbsp;работают на&nbsp;тебя: приводят клиентов, продают, запоминаются.
+        </p>
+        <p>
+          Каждый проект собираю с&nbsp;нуля под&nbsp;задачу и&nbsp;характер бренда.
+          Без шаблонов, без воды, без «и&nbsp;так сойдёт».
+        </p>
+        <ul class="about__stats">
+          <li>
+            <span class="num serif italic">01</span>
+            <div class="about__stats-content">
+              <span class="about__stats-main">индивидуальный подход к&nbsp;каждому клиенту</span>
+              <span class="about__stats-ps"><span class="ps-label">P.S.</span> своя стратегия, без&nbsp;шаблонов</span>
+            </div>
+          </li>
+          <li>
+            <span class="num serif italic">02</span>
+            <div class="about__stats-content">
+              <span class="about__stats-main">удалённый формат&nbsp;— встречи в&nbsp;Zoom / Telegram</span>
+              <span class="about__stats-ps"><span class="ps-label">P.S.</span> связь без&nbsp;границ</span>
+            </div>
+          </li>
+          <li>
+            <span class="num serif italic">03</span>
+            <div class="about__stats-content">
+              <span class="about__stats-main">от&nbsp;идеи до&nbsp;запуска&nbsp;— под&nbsp;ключ</span>
+              <span class="about__stats-ps"><span class="ps-label">P.S.</span> дизайн, вёрстка, запуск</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="process__head">
+        <span class="eyebrow">// как я работаю</span>
+        <h2 class="process__title">
+          <span class="serif italic">Создаю</span>
+          <span class="process__arrow">→</span>
+          <span class="serif italic">Раскачиваю</span>
+          <span class="process__arrow">→</span>
+          <span class="serif italic">Продаю</span>
+        </h2>
+      </div>
+
+      <div class="process__grid">
+        <div class="process__step">
+          <div class="process__num serif italic">01</div>
+          <h3>Создаю</h3>
+          <p>
+            Разрабатываю дизайн и&nbsp;верстаю сайт под&nbsp;ключ&nbsp;—
+            от&nbsp;концепции до&nbsp;публикации в&nbsp;интернете.
+          </p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__num serif italic">02</div>
+          <h3>Раскачиваю</h3>
+          <p>
+            Настраиваю SEO, аналитику и&nbsp;подключаю трафик,
+            чтобы сайт заметили и&nbsp;нашли нужные клиенты.
+          </p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__num serif italic">03</div>
+          <h3>Продаю</h3>
+          <p>
+            Сайт превращает посетителей в&nbsp;заявки и&nbsp;заказы&nbsp;—
+            работает на&nbsp;тебя 24/7 как бизнес-актив.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-head section-head--with-note">
+        <div>
+          <span class="eyebrow">// услуги</span>
+          <h2 class="section-title"><span class="serif italic">Что я делаю</span></h2>
+        </div>
+        <div class="note-card" aria-hidden="true">
+          <svg class="note-card__arrow" viewBox="0 0 130 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 118 14 Q 78 22 50 44 T 22 82" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M 38 76 L 22 82 L 26 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="script">5 направлений<br/>под твою задачу</span>
+        </div>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service">
+          <div class="service__circle">
+            <div class="service__num serif italic">01</div>
+            <h3 class="service__title">Лендинг</h3>
+          </div>
+          <p class="service__desc">
+            Одностраничный сайт с&nbsp;одной целью&nbsp;— продать.
+            Цепляет с&nbsp;первого экрана и&nbsp;ведёт к&nbsp;заявке.
+          </p>
+          <ul class="service__points">
+            <li>дизайн + вёрстка</li>
+            <li>адаптив под все устройства</li>
+            <li>подключение форм и аналитики</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service__circle">
+            <div class="service__num serif italic">02</div>
+            <h3 class="service__title">Многостраничный сайт</h3>
+          </div>
+          <p class="service__desc">
+            Корпоративный сайт с&nbsp;разделами, каталогом и&nbsp;навигацией.
+            Полностью раскрывает бренд и&nbsp;услуги.
+          </p>
+          <ul class="service__points">
+            <li>структура под SEO</li>
+            <li>удобная админка</li>
+            <li>интеграции и формы</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service__circle">
+            <div class="service__num serif italic">03</div>
+            <h3 class="service__title">Таплинк</h3>
+          </div>
+          <p class="service__desc">
+            Мини-сайт-визитка для&nbsp;соцсетей.
+            Все ссылки, услуги и&nbsp;контакты в&nbsp;одном месте&nbsp;— стильно и&nbsp;удобно.
+          </p>
+          <ul class="service__points">
+            <li>дизайн под твой Instagram</li>
+            <li>быстро загружается с телефона</li>
+            <li>можно менять самой</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service__circle">
+            <div class="service__num serif italic">04</div>
+            <h3 class="service__title">Чат-бот</h3>
+          </div>
+          <p class="service__desc">
+            Автоматизирую общение с&nbsp;клиентами в&nbsp;Telegram и&nbsp;WhatsApp.
+            Отвечает, записывает, продаёт&nbsp;— пока ты&nbsp;отдыхаешь.
+          </p>
+          <ul class="service__points">
+            <li>сценарии под твой бизнес</li>
+            <li>приём заявок и оплат</li>
+            <li>уведомления и рассылки</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <div class="service__circle">
+            <div class="service__num serif italic">05</div>
+            <h3 class="service__title">Презентация</h3>
+          </div>
+          <p class="service__desc">
+            Продающие слайды для&nbsp;запусков, питчей и&nbsp;продаж.
+            Структура, дизайн, текст&nbsp;— всё под&nbsp;твою задачу.
+          </p>
+          <ul class="service__points">
+            <li>уникальный визуал в стиле бренда</li>
+            <li>чёткая структура и смысловые блоки</li>
+            <li>формат PDF / Figma / PPT</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="guarantees" class="guarantees">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">// гарантии</span>
+        <h2 class="section-title"><span class="serif italic">Я гарантирую</span></h2>
+        <span class="script script--accent guarantees__note" aria-hidden="true">Не только на словах!</span>
+      </div>
+
+      <div class="guarantees__grid">
+        <div class="guarantee">
+          <div class="guarantee__num serif">01</div>
+          <h3>Уникальный дизайн</h3>
+          <p>Никаких шаблонов. Каждый сайт собираю с&nbsp;нуля под&nbsp;твой бренд и&nbsp;задачу.</p>
+        </div>
+
+        <div class="guarantee">
+          <div class="guarantee__num serif">02</div>
+          <h3>Полная адаптивность</h3>
+          <p>Сайт безупречно выглядит на&nbsp;телефоне, планшете и&nbsp;компьютере&nbsp;— без исключений.</p>
+        </div>
+
+        <div class="guarantee">
+          <div class="guarantee__num serif">03</div>
+          <h3>Сроки в договоре</h3>
+          <p>Дедлайны фиксируются заранее. Ты&nbsp;всегда знаешь, на&nbsp;каком этапе проект.</p>
+        </div>
+
+        <div class="guarantee">
+          <div class="guarantee__num serif">04</div>
+          <h3>Правки в процессе</h3>
+          <p>Согласовываем макет на&nbsp;каждом шаге. Бесплатные правки до&nbsp;финального результата.</p>
+        </div>
+
+        <div class="guarantee">
+          <div class="guarantee__num serif">05</div>
+          <h3>Поддержка после сдачи</h3>
+          <p>Покажу, как пользоваться сайтом, и&nbsp;буду на&nbsp;связи после запуска.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head section-head--medallion">
+        <span class="eyebrow">// портфолио</span>
+        <div class="title-medallion">
+          <h2 class="title-medallion__title"><span class="serif italic">Мои проекты</span></h2>
+        </div>
+      </div>
+
+      <a href="https://thriving-shortbread-c2b3cb.netlify.app/" target="_blank" rel="noopener" class="project-card">
+        <div class="project-card__meta">
+          <span class="eyebrow">// case 01</span>
+          <h3 class="project-card__title serif italic">Авторский проект</h3>
+          <p class="project-card__desc">
+            Полностью разработанный и&nbsp;сверстанный сайт&nbsp;—
+            от&nbsp;концепции и&nbsp;дизайна до&nbsp;запуска в&nbsp;интернете.
+          </p>
+          <span class="project-card__link">Смотреть сайт →</span>
+        </div>
+        <div class="project-card__visual">
+          <div class="project-card__frame">
+            <div class="project-card__dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="project-card__url">
+              <span class="project-card__url-text">thriving-shortbread-c2b3cb.netlify.app</span>
+              <span class="project-card__hint">↕ листайте превью</span>
+            </div>
+            <iframe src="https://thriving-shortbread-c2b3cb.netlify.app/" loading="lazy" title="Превью проекта"></iframe>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://funny-unicorn-daa074.netlify.app/" target="_blank" rel="noopener" class="project-card">
+        <div class="project-card__meta">
+          <span class="eyebrow">// case 02</span>
+          <h3 class="project-card__title serif italic">AURUM Detailing</h3>
+          <p class="project-card__desc">
+            Премиум-сайт детейлинг-центра в&nbsp;Москве. Тёмный дизайн с&nbsp;неоновыми
+            акцентами, интерактивный микроскоп до/после и&nbsp;умный калькулятор цены.
+          </p>
+          <span class="project-card__link">Смотреть сайт →</span>
+        </div>
+        <div class="project-card__visual">
+          <div class="project-card__frame">
+            <div class="project-card__dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="project-card__url">
+              <span class="project-card__url-text">funny-unicorn-daa074.netlify.app</span>
+              <span class="project-card__hint">↕ листайте превью</span>
+            </div>
+            <iframe src="https://funny-unicorn-daa074.netlify.app/" loading="lazy" title="Превью AURUM Detailing"></iframe>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item serif italic">веб-дизайн</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">разработка</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">лендинги</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">многостраничники</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">таплинки</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">чат-боты</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">презентации</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">фирменный стиль</span>
+      <span class="marquee__sep">✦</span>
+
+      <span class="marquee__item serif italic">веб-дизайн</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">разработка</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">лендинги</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">многостраничники</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">таплинки</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">чат-боты</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">презентации</span>
+      <span class="marquee__sep">✦</span>
+      <span class="marquee__item serif italic">фирменный стиль</span>
+      <span class="marquee__sep">✦</span>
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="container contact__inner">
+      <span class="eyebrow">// связаться</span>
+      <h2 class="contact__title">
+        <span class="serif italic">Готова обсудить</span><br/>
+        <span class="serif">твой проект</span>
+      </h2>
+      <p class="contact__lead">
+        Напиши в&nbsp;любом удобном мессенджере.<br/>
+        Ответ не&nbsp;заставит тебя ждать!
+      </p>
+
+      <div class="contact__price">
+        <span class="contact__price-label">// о стоимости</span>
+        <p>
+          Цена формируется под&nbsp;задачу&nbsp;— обсудим на&nbsp;коротком созвоне или в&nbsp;переписке, когда ты&nbsp;расскажешь о&nbsp;проекте.
+        </p>
+      </div>
+
+      <div class="contact__buttons">
+        <a href="https://t.me/veb_kate" target="_blank" rel="noopener" class="contact-btn">
+          <span class="contact-btn__label">Telegram</span>
+          <span class="contact-btn__arrow">→</span>
+        </a>
+        <a href="https://wa.me/79014562853" target="_blank" rel="noopener" class="contact-btn">
+          <span class="contact-btn__label">WhatsApp</span>
+          <span class="contact-btn__arrow">→</span>
+        </a>
+        <a href="https://www.instagram.com/ktt_creator?igsh=MTJycmZxenhpZTlvdA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener" class="contact-btn">
+          <span class="contact-btn__label">Instagram</span>
+          <span class="contact-btn__arrow">→</span>
+        </a>
+        <a href="mailto:ekaterina.bakk@gmail.com" class="contact-btn">
+          <span class="contact-btn__label">E-mail</span>
+          <span class="contact-btn__arrow">→</span>
+        </a>
+      </div>
+
+      <div class="farewell">
+        <span class="farewell__asterisk" aria-hidden="true">✦</span>
+        <p class="farewell__quote serif italic">
+          «твой бренд заслуживает сайта,<br/>
+          которым <span class="underline-accent">гордятся</span>»
+        </p>
+        <div class="farewell__sign">
+          <span class="script farewell__name">Катя</span>
+          <span class="farewell__divider"></span>
+          <span class="farewell__role">web designer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 · Катя · web designer &amp; developer</span>
+      <a href="#top">наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js?v=11"></script>
+</body>
+</html>
